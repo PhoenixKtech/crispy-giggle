@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { Layout } from './components/layout/Layout'
 import { ExecutiveDashboard } from './pages/ExecutiveDashboard'
 import { TaskCommandCenter } from './pages/TaskCommandCenter'
@@ -8,7 +8,7 @@ import { SopLibrary } from './pages/SopLibrary'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<ExecutiveDashboard />} />
@@ -18,6 +18,6 @@ export default function App() {
           <Route path="/sops" element={<SopLibrary />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
