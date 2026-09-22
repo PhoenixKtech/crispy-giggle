@@ -64,7 +64,8 @@ export function Sidebar({ open, onClose }: { open: boolean; onClose: () => void 
         <div className="mx-3 mb-5 rounded-xl border border-white/10 bg-white/[0.04] p-3.5">
           <p className="text-[11px] font-medium text-gold-300">Data storage</p>
           <p className="mt-1 text-[11.5px] leading-snug text-white/45">
-            Everything here is saved locally in this browser. Nothing leaves your device.
+            Everything here is saved locally in this browser. If you connect Asana, task data is fetched
+            directly from Asana's API — nothing else leaves your device.
           </p>
         </div>
       </aside>

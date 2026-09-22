@@ -11,6 +11,7 @@ import { Badge, priorityTone } from '../components/ui/Badge'
 import { Modal } from '../components/ui/Modal'
 import { ConfirmDialog } from '../components/ui/ConfirmDialog'
 import { EmptyState } from '../components/ui/EmptyState'
+import { AsanaPanel } from '../components/AsanaPanel'
 
 const DEPARTMENTS: Department[] = ['CEO', 'Operations', 'Finance', 'Marketing', 'Partnerships']
 const PRIORITIES: Priority[] = ['Low', 'Medium', 'High', 'Critical']
@@ -83,6 +84,8 @@ export function TaskCommandCenter() {
 
   return (
     <div className="space-y-5">
+      <AsanaPanel />
+
       <div className="flex flex-wrap items-center gap-3">
         <div className="relative flex-1 min-w-[200px] max-w-xs">
           <Search size={15} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-ink/35" />
